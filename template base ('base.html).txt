@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br">
+
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Registro de Acidentes</title>
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+
+
+</head>
+
+
+A
+
+
+<body>
+
+
+<header>
+
+
+<h1>Registro de Acidentes</h1>
+
+
+<nav>
+
+
+<a href="{{ url_for('index') }}">Início</a>
+
+
+<a href="{{ url_for('novo_acidente") }}">Novo Acidente</a>
+
+
+</nav>
+
+
+</header>
+
+
+<main>
+
+(% block content %}{% endblock %)
+
+</main>
+
+
+</body>
+
+
+</html>
