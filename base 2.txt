@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+
+<h2>Lista de Acidentes Registrados</h2>
+
+
+<ul>
+
+
+	{% for acidente in acidentes %}
+
+	
+<li>{{ acidente.data }}-{{ acidente.horario }} - {{ acidente.local }} - {{ acidente.
+
+nome}}
+	{% endfor %}
+
+
+</ul>
+
+
+{% endblock %}
